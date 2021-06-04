@@ -34,7 +34,7 @@ class VehicleRepositoryTest {
         Vehicle vehicle = new Vehicle("Opel", "Kapitän", 1972);
         System.out.println(vehicle.toString());
 
-        vehicleRepository.persist(vehicle);
+        vehicle = vehicleRepository.save(vehicle);
         System.out.println(vehicle.toString());
 
         vehicle.model = "Commodore";
